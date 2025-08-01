@@ -6,9 +6,10 @@ This project digitizes and analyzes historic African American tourism brochures 
 Using Python and open-source libraries, the project extracts text and images from scanned brochures, parses structured data like names, addresses, and phone numbers, and geocodes locations to create interactive maps and visualizations. The work bridges data science, archival research, and digital humanities to make these fragile historical materials accessible and analyzable.
 
 ## Features
-- High-resolution image extraction from scanned PDFs and PNGs  
+- Image extraction from scanned PDFs and PNGs
+- Tools to enhance, crop, and enlarge
 - OCR text extraction using PyMuPDF and pytesseract  
-- Parsing of names, titles, addresses, and phone numbers with regex and heuristics  
+- Parsing of names, titles, addresses, and phone numbers with regex and heuristics
 - Splitting scanned brochure pages into individual sections  
 - Geocoding addresses for mapping with Folium and GIS tools  
 - Integration of historical research and cultural context

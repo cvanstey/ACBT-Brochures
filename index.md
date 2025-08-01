@@ -1,4 +1,4 @@
-![Banner](assets/header_image.png)
+![Banner](assets/map.png)
 
 # New Jersey's Cultural Landscapes
 

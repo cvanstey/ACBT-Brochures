@@ -1,35 +1,68 @@
+# Introduction & About This Project
+
+## Uncovering Atlantic City’s Black Cultural Memory through Data and Mapping
+
+Atlantic City, New Jersey, was a vital hub of African American tourism, entrepreneurship, and social life during the era of segregation. Despite its significance, much of this history has been overlooked or forgotten—lost in ephemeral materials like mid-century tourism brochures, photographs, and city records that remain largely undigitized and inaccessible.
+
+**New Jersey’s Cultural Landscapes: Mapping Atlantic City’s Cultural Memory** is an interdisciplinary effort to recover and reanimate these hidden stories. By digitizing archival materials and applying data science techniques alongside interactive cartography, this project aims to reveal the spatial and cultural dimensions of Black life in Atlantic City during the Jim Crow era.
+
 ---
-title: Home
-layout: home
+
+## Project Goals
+
+- **Recover and preserve hidden histories** through the digitization and analysis of archival collections.
+- **Apply data science tools** such as Optical Character Recognition (OCR), natural language processing, and geospatial analysis to clean, structure, and visualize complex historical data.
+- **Build interactive maps and visualizations** that show how racialized space, entrepreneurship, and cultural memory intersect in Atlantic City.
+- **Engage scholars, students, and the public** by providing open access to data, code, and interpretive resources.
+
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+## Methodological Foundations
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+This project sits at the crossroads of Digital Humanities, American Studies, and Archival Science. Our workflow combines:
 
-More specifically, the created site:
+- High-resolution digitization and OCR of printed materials to extract machine-readable text.
+- Data cleaning, parsing, and fuzzy matching to create structured datasets from inconsistent and complex layouts.
+- Geographic Information Systems (GIS) for spatial analysis and mapping of businesses, social organizations, and cultural landmarks.
+- Web-based interactive visualizations developed with Python and JavaScript to enable dynamic exploration of the data.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+---
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## Why Atlantic City?
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+> _“There are many that sit idly by and let nature take its course, but since 1929 we have tried to improve our rooming houses, hotels, restaurants, sports emporiums, and other facilities in an effort to keep pace with the natural advantages. Indeed, we feel it is the duty of all to keep pace with the times as much as possible. In fact, that should go for the Northside and Southside alike. We can then stay in a position to keep Atlantic City alive, and ‘The Playground of the World’ it is known to be throughout the world.”_  
+> — C.J. Newsome, *Negro History Bulletin*, 1952
 
-To get started with creating a site, simply:
+Atlantic City served as a vibrant space of Black social life, cultural expression, and economic resilience during a period of segregation and racial exclusion. Exploring these layered histories offers vital insight into the dynamics of racial capitalism, tourism, and memory in the mid-20th century.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+---
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+## Why Focus on the Atlantic City Board of Trade Brochures?
 
-----
+> _“The American Teachers Assn., The N. M. A., The National Undertakers Assn., The National Federation of Colored Women’s Clubs, The Grand Lodge of Colored Elks, The Alpha Phi Alpha Fraternity, The Beauticians, Church Conferences, and several smaller groups most of whom came during the off season. The Elks met here in August of this year, the Undertakers and Postal Employees will meet here next year. They have been here two or more times before, in fact, it is estimated that since 1931 our visiting conventions have brought a minimum of $1,000,000.00 a year to this city.”_  
+> — C.J. Newsome, *Negro History Bulletin*, 1952
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+These brochures are unique artifacts that document a thriving network of Black-owned businesses, social organizations, and cultural events. Despite their promotional origins, they serve as crucial vernacular records that reveal community agency, economic vitality, and social connections often absent from formal archives.
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+---
+
+## Source Materials
+
+- Atlantic City Board of Trade brochures (1930s–1940s), digitized from the Atlantic City Free Public Library collections.
+- Related archival photographs, maps, and ephemera from regional institutions including Stockton University Special Collections.
+- Oral histories and scholarly commentaries that contextualize and enrich the data.
+
+---
+
+## Learn More
+
+- Detailed technical workflows can be found in the [Methods](methods.md) section.  
+- Explore structured datasets in the [Data](data.md) section.  
+- Interact with geospatial visualizations on the [Maps](maps.md) page.  
+- Access the project’s full codebase and open data on [GitHub](https://github.com/cvanstey/data-in-the-archive_ACBT).
+
+---
+
+For questions or collaboration inquiries, please visit the [Contact](contact.md) page.
+
+---

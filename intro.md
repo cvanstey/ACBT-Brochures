@@ -67,4 +67,4 @@ For questions or collaboration inquiries, please visit the [Contact](contact.md)
 
 ---
 
-![Historic Atlantic City](.../assets/Atlantic-City-Beach-and-Skyline-1944.png)
+![Historic Atlantic City](assets/Atlantic-City-Beach-and-Skyline-1944.png)

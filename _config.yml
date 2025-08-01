@@ -1,8 +1,12 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+title: ACBT Brochures
+description: Historical brochures from Atlantic City
+remote_theme: just-the-docs/just-the-docs
+color_scheme: light
 
-url: https://just-the-docs.github.io
+# Optional:
+# logo: "/assets/logo.png"
+# favicon_ico: "/assets/favicon.ico"
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+# Enables GitHub Pages to build with this theme
+plugins:
+  - jekyll-remote-theme

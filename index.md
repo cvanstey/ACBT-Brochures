@@ -15,7 +15,7 @@ Welcome to the documentation for this project, which explores the role of Africa
 
 ## How to Navigate
 
-Explore the sections above to dive into the data, methods, and maps. Start with the **About** page for background and then check out the **Maps** to see the interactive visualizations.
+Explore the sections above to dive into the data, methods, and maps. Start with the **Intro** page for background and then check out the **Maps** to see the interactive visualizations.
 
 ---
 

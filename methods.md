@@ -1,4 +1,4 @@
-### 🧪 Methods
+# 🧪 METHODS
 
 This project combines computational methods with archival critique to recover and reinterpret mid-20th-century African American tourism materials—specifically brochures produced by the Atlantic City Board of Trade from the 1930s to 1950s. These fragile and visually complex documents were never meant to be data, but they offer a powerful window into the spatial and cultural history of segregation-era leisure and labor.
 

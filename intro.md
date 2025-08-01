@@ -1,3 +1,11 @@
+---
+title: "📖 Introduction"
+nav_order: 1
+---
+
+# Introduction
+
+Welcome to the ACBT Brochures site...
 # Introduction & About This Project
 
 ## Uncovering Atlantic City’s Black Cultural Memory through Data and Mapping

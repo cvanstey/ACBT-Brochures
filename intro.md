@@ -1,6 +1,5 @@
-
-Welcome to the project...
 # 📖 Introduction
+
 
 ## Uncovering Atlantic City’s Black Cultural Memory through Data and Mapping
 

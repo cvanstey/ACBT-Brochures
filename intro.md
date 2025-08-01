@@ -1,8 +1,3 @@
----
-title: "📖 Introduction"
-nav_order: 1
----
-
 # Introduction
 
 Welcome to the ACBT Brochures site...

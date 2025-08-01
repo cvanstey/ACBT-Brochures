@@ -55,7 +55,15 @@ The maps in this project serve as a visual interface for exploring African Ameri
 - **Errors**: Due to OCR artifacts or unclear layout, some locations are estimated or marked “approximate.”
 - **Map Boundaries**: Focused on historically Black neighborhoods, particularly the Northside and Kentucky Avenue corridor.
 
+
+You can open the map in a new tab here:  
+[Open the full map](./maps/index.html){:target="_blank"}
+
 ---
+
+<!-- Embed the map using an iframe -->
+<iframe src="./maps/index.html" width="100%" height="600" style="border:none;"></iframe>
+
 
 ## 🔗 Coming Soon
 

@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
         <link rel="stylesheet" href="css/qgis2web.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-search.css">
+        <link rel="stylesheet" href="css/filter.css">
+<link rel="stylesheet" href="css/nouislider.min.css">
         <link rel="stylesheet" href="css/leaflet.photon.css">
         <style>
         html, body, #map {
@@ -37,6 +40,10 @@
         <script src="js/leaflet.photon.js"></script>
         <script src="js/proj4.js"></script>
         <script src="js/proj4leaflet.js"></script>
+        <script src="js/leaflet-search.js"></script>
+        <script src="js/tailDT.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
         <script src="data/parsed_brochure_geocoded72925_2.js"></script>
         <script>
         var highlightLayer;
@@ -149,14 +156,13 @@
                         <td colspan="2">' + (feature.properties['Brochure'] !== null ? autolinker.link(String(feature.properties['Brochure']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td class="visible-with-data" id="Details" colspan="2"><strong>Details</strong><br />' + (feature.properties['Details'] !== null ? autolinker.link(String(feature.properties['Details']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Details'] !== null ? autolinker.link(String(feature.properties['Details']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Image_Path'] !== null ? autolinker.link(String(feature.properties['Image_Path']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Year</th>\
-                        <td>' + (feature.properties['Year'] !== null ? autolinker.link(String(feature.properties['Year']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Year'] !== null ? autolinker.link(String(feature.properties['Year']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Page'] !== null ? autolinker.link(String(feature.properties['Page']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -620,6 +626,170 @@
         });
         lay.addTo(map);
         setBounds();
+        map.addControl(new L.Control.Search({
+            layer: layer_parsed_brochure_geocoded72925_2,
+            initial: false,
+            hideMarkerOnCollapse: true,
+            propertyName: 'Business'}));
+        if (typeof url === 'undefined') {
+            document.getElementsByClassName('search-button')[0].className += ' fa fa-binoculars';
+        } else {
+            document.getElementsByClassName('search-button')[1].className += ' fa fa-binoculars';
+        }
+        var mapDiv = document.getElementById('map');
+        var row = document.createElement('div');
+        row.className="row";
+        row.id="all";
+        row.style.height = "100%";
+        var col1 = document.createElement('div');
+        col1.className="col9";
+        col1.id = "mapWindow";
+        col1.style.height = "99%";
+        col1.style.width = "80%";
+        col1.style.display = "inline-block";
+        var col2 = document.createElement('div');
+        col2.className="col3";
+        col2.id = "menu";
+        col2.style.display = "inline-block";
+        mapDiv.parentNode.insertBefore(row, mapDiv);
+        document.getElementById("all").appendChild(col1);
+        document.getElementById("all").appendChild(col2);
+        col1.appendChild(mapDiv)
+        var Filters = {"Industry": "str"};
+        function filterFunc() {
+          map.eachLayer(function(lyr){
+          if ("options" in lyr && "dataVar" in lyr["options"]){
+            features = this[lyr["options"]["dataVar"]].features.slice(0);
+            try{
+              for (key in Filters){
+                keyS = key.replace(/[^a-zA-Z0-9_]/g, "")
+                if (Filters[key] == "str" || Filters[key] == "bool"){
+                  var selection = [];
+                  var options = document.getElementById("sel_" + keyS).options
+                  for (var i=0; i < options.length; i++) {
+                    if (options[i].selected) selection.push(options[i].value);
+                  }
+                    try{
+                      if (key in features[0].properties){
+                        for (i = features.length - 1;
+                          i >= 0; --i){
+                          if (selection.indexOf(
+                          features[i].properties[key])<0
+                          && selection.length>0) {
+                          features.splice(i,1);
+                          }
+                        }
+                      }
+                    } catch(err){
+                  }
+                }
+                if (Filters[key] == "int"){
+                  sliderVals =  document.getElementById(
+                    "div_" + keyS).noUiSlider.get();
+                  try{
+                    if (key in features[0].properties){
+                    for (i = features.length - 1; i >= 0; --i){
+                      if (parseInt(features[i].properties[key])
+                          < sliderVals[0]
+                          || parseInt(features[i].properties[key])
+                          > sliderVals[1]){
+                            features.splice(i,1);
+                          }
+                        }
+                      }
+                    } catch(err){
+                    }
+                  }
+                if (Filters[key] == "real"){
+                  sliderVals =  document.getElementById(
+                    "div_" + keyS).noUiSlider.get();
+                  try{
+                    if (key in features[0].properties){
+                    for (i = features.length - 1; i >= 0; --i){
+                      if (features[i].properties[key]
+                          < sliderVals[0]
+                          || features[i].properties[key]
+                          > sliderVals[1]){
+                            features.splice(i,1);
+                          }
+                        }
+                      }
+                    } catch(err){
+                    }
+                  }
+                if (Filters[key] == "date"
+                  || Filters[key] == "datetime"
+                  || Filters[key] == "time"){
+                  try{
+                    if (key in features[0].properties){
+                      HTMLkey = key.replace(/[&\/\\#,+()$~%.'":*?<>{} ]/g, '');
+                      startdate = document.getElementById("dat_" +
+                        HTMLkey + "_date1").value.replace(" ", "T");
+                      enddate = document.getElementById("dat_" +
+                        HTMLkey + "_date2").value.replace(" ", "T");
+                      for (i = features.length - 1; i >= 0; --i){
+                        if (features[i].properties[key] < startdate
+                          || features[i].properties[key] > enddate){
+                          features.splice(i,1);
+                        }
+                      }
+                    }
+                  } catch(err){
+                  }
+                }
+              }
+            } catch(err){
+            }
+          this[lyr["options"]["layerName"]].clearLayers();
+          this[lyr["options"]["layerName"]].addData(features);
+          }
+          })
+        }
+            document.getElementById("menu").appendChild(
+                document.createElement("div"));
+            var div_Industry = document.createElement('div');
+            div_Industry.id = "div_Industry";
+            div_Industry.className= "filterselect";
+            document.getElementById("menu").appendChild(div_Industry);
+            sel_Industry = document.createElement('select');
+            sel_Industry.multiple = true;
+            sel_Industry.size = 10;
+            sel_Industry.id = "sel_Industry";
+            var Industry_options_str = "<option value='' unselected></option>";
+            sel_Industry.onchange = function(){filterFunc()};
+            Industry_options_str  += '<option value="Academics">Academics</option>';
+            Industry_options_str  += '<option value="Accommodation">Accommodation</option>';
+            Industry_options_str  += '<option value="Aviation">Aviation</option>';
+            Industry_options_str  += '<option value="Beauty">Beauty</option>';
+            Industry_options_str  += '<option value="Charitable Organizations">Charitable Organizations</option>';
+            Industry_options_str  += '<option value="Church">Church</option>';
+            Industry_options_str  += '<option value="Clothing/Attire">Clothing/Attire</option>';
+            Industry_options_str  += '<option value="Clubs and Associations">Clubs and Associations</option>';
+            Industry_options_str  += '<option value="Entertainment">Entertainment</option>';
+            Industry_options_str  += '<option value="Food">Food</option>';
+            Industry_options_str  += '<option value="Government">Government</option>';
+            Industry_options_str  += '<option value="Image">Image</option>';
+            Industry_options_str  += '<option value="Journalism">Journalism</option>';
+            Industry_options_str  += '<option value="Retail">Retail</option>';
+            Industry_options_str  += '<option value="Services">Services</option>';
+            Industry_options_str  += '<option value="Tourism">Tourism</option>';
+            sel_Industry.innerHTML = Industry_options_str;
+            div_Industry.appendChild(sel_Industry);
+            var lab_Industry = document.createElement('div');
+            lab_Industry.innerHTML = 'Industry';
+            lab_Industry.className = 'filterlabel';
+            div_Industry.appendChild(lab_Industry);
+            var reset_Industry = document.createElement('div');
+            reset_Industry.innerHTML = 'clear filter';
+            reset_Industry.className = 'filterlabel';
+            reset_Industry.onclick = function() {
+                var options = document.getElementById("sel_Industry").options;
+                for (var i=0; i < options.length; i++) {
+                    options[i].selected = false;
+                }
+                filterFunc();
+            };
+            div_Industry.appendChild(reset_Industry);
         L.ImageOverlay.include({
             getBounds: function () {
                 return this._bounds;
@@ -628,4 +798,3 @@
         </script>
     </body>
 </html>
-

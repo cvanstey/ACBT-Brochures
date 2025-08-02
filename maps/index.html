@@ -45,41 +45,39 @@
         <script src="js/tailDT.js"></script>
 <script src="js/nouislider.min.js"></script>
 <script src="js/wNumb.js"></script>
-        <script src="data/parsed_brochure_geocoded72925_2.js"></script>
-        <script>
-        var highlightLayer;
-        function highlightFeature(e) {
-            highlightLayer = e.target;
+<script src="data/parsed_brochure_geocoded72925_2.js"></script>
+<script>
+    var highlightLayer;
+    function highlightFeature(e) {
+        highlightLayer = e.target;
 
-            if (e.target.feature.geometry.type === 'LineString' || e.target.feature.geometry.type === 'MultiLineString') {
-              highlightLayer.setStyle({
-                color: '#ffff00',
-              });
-            } else {
-              highlightLayer.setStyle({
-                fillColor: '#ffff00',
-                fillOpacity: 1
-              });
-            }
-            highlightLayer.openPopup();
+        if (e.target.feature.geometry.type === 'LineString' || e.target.feature.geometry.type === 'MultiLineString') {
+          highlightLayer.setStyle({
+            color: '#ffff00',
+          });
+        } else {
+          highlightLayer.setStyle({
+            fillColor: '#ffff00',
+            fillOpacity: 1
+          });
         }
-        var crs = new L.Proj.CRS('EPSG:3857', '+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs', {
-            resolutions: [2800, 1400, 700, 350, 175, 84, 42, 21, 11.2, 5.6, 2.8, 1.4, 0.7, 0.35, 0.14, 0.07],
-        });
-	var map = L.map('map', {
-	    crs: crs,
-	    continuousWorld: false,
-	    worldCopyJump: false, 
-	    zoomControl: false,
-	    maxZoom: 28,
-	    minZoom: 1
-	});
-	
-	// Add the tile layer separately AFTER map creation
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	    attribution: '&copy; OpenStreetMap contributors',
-	    maxZoom: 19
-	}).addTo(map);
+        highlightLayer.openPopup();
+    }
+
+    // Create the map using default CRS (Leaflet's standard)
+    var map = L.map('map', {
+        continuousWorld: false,
+        worldCopyJump: false, 
+        zoomControl: false,
+        maxZoom: 19,  // OSM max zoom
+        minZoom: 1
+    }).setView([39.3643, -74.4229], 13);  // Set your center coordinates & zoom here
+
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 19
+    }).addTo(map);
 
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');

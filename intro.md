@@ -1,4 +1,4 @@
-# 📖 Introduction
+# 📖 INTRODUCTION
 
 
 ## Uncovering Atlantic City’s Black Cultural Memory through Data and Mapping

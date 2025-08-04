@@ -39,40 +39,40 @@ Assisted in developing clean, readable, and efficient project documentation and 
 
 ## Installation
 1. Clone the repository:
-
-bash
+```bash
 Copy
 Edit
 git clone https://github.com/yourusername/acbt-brochures.git
 cd acbt-brochures
-Install dependencies (Python 3.9+ recommended):
-
+```
+2. Install dependencies (Python 3.9+ recommended):
 ```bash
 Copy
 Edit
 pip install -r requirements.txt
-(Optional) Set up Tesseract OCR:
-
-2. Install Tesseract
-
+```
+3. (Optional) Set up Tesseract OCR:
+Install Tesseract
 Ensure it’s in your system PATH, or specify the path in your script:
-
+```bash
 python
 Copy
 Edit
 pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'  # or your path
-Run the processing script:
-
+```
+4. Run the processing script:
 ```bash
 Copy
 Edit
 python process_brochures.py
-Getting Started
+```
+
+## Getting Started
 You can explore:
 
-data/ – Structured CSV output of parsed brochure data
-images/ – Extracted and enhanced images from brochures
-maps/ – Interactive map visualizations
+- data/ – Structured CSV output of parsed brochure data
+- images/ – Extracted and enhanced images from brochures
+- maps/ – Interactive map visualizations
 
 See the docs/ folder or GitHub Pages site for project demos and visualizations.
 

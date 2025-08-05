@@ -20,7 +20,7 @@ Saves images and text to a target output folder
 # structured data for mapping, analysis, or tagging.
 #extract embedded or layout-based images.
 #full archival or public history pipeline.
-#it to take time and let it process for high-quality results.
+#it might take time. let it process for high-quality results.
 
 #if you prefer to extract each image from each page, use 3_multiple_files.py which is a batch processing script.  
 

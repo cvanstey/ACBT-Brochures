@@ -20,7 +20,7 @@ Atlantic City, New Jersey, was a vital hub of African American tourism, entrepre
 
 ## Methodological Foundations
 
-This project sits at the crossroads of Digital Humanities, American Studies, and Archival Science. Our workflow combines:
+This project sits at the crossroads of Digital Humanities, American Studies, and Archival Science. This workflow combines:
 
 - High-resolution digitization and OCR of printed materials to extract machine-readable text.
 - Data cleaning, parsing, and fuzzy matching to create structured datasets from inconsistent and complex layouts.

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The maps in this project serve as a visual interface for exploring African American-owned businesses, portraits, and community spaces featured in Atlantic City Board of Trade brochures (1936–1945). By layering historical data onto the city’s geography, we aim to reveal spatial patterns of Black entrepreneurship, leisure, and resistance during segregation.
+The maps in this project serve as a visual interface for exploring Northside businesses, portraits, and community spaces featured in Atlantic City Board of Trade brochures (1936–1945). By layering historical data onto the city’s geography, we aim to reveal spatial patterns of entrepreneurship, leisure, and resistance during segregation, New Deal initiatives, and a country recovering from a historic financial collapse.
 
 ---
 

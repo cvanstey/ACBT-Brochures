@@ -2,7 +2,9 @@
 
 ## Overview
 
-The maps in this project serve as a visual interface for exploring Northside businesses, portraits, and community spaces featured in Atlantic City Board of Trade brochures (1936–1945). By layering historical data onto the city’s geography, we aim to reveal spatial patterns of entrepreneurship, leisure, and resistance during segregation, New Deal initiatives, and a country recovering from a historic financial collapse.
+The maps in this project serve as a visual interface for exploring Northside businesses, portraits, and community spaces featured in Atlantic City Board of Trade brochures (1936–1945). By layering historical data onto the city’s geography, we aim to reveal spatial patterns of entrepreneurship, leisure, and resistance during segregation, New Deal initiatives, and a country recovering from a historic financial collapse as it transitions into a second world war. The brochures can stand alone as their own objects of study but by adding a layer of data science and digital humanities, patterns begin to emerge. Thoughts towards coding theories about each pattern begin to swirl and already a version 2.0 begins to form.
+
+Between now and then, we can immerse ourselves in some data. 
 
 ---
 
@@ -76,5 +78,5 @@ Exportable layers as:
 
 ---
 
-> The map is not just a navigational tool—it is a way of narrating place, memory, and survival.  
+> The map serves as a navigational tool—it but it has a way of narrating place, memory, and positioning itself as a method to interpret theory.  
 > *Use it to explore what was built, preserved, and remembered in the margins of Atlantic City's tourism economy.*

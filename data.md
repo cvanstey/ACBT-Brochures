@@ -27,7 +27,7 @@ This project extracts, structures, and visualizes data from six African American
 | `Image`, `Image2`    | Associated cropped image files from original page                   |
 | `Latitude`, `Longitude` | Manually or semi-automatically geocoded                         |
 | `Details`            | Notes on services, slogans, or other distinguishing info            |
-| `Section Type`       | Labeled as: ad, portrait, letter, listing, map, etc.                |
+| `Section Type`       | Labeled as: advertisement, profile, letter, listing, image, etc.                |
 
 ---
 

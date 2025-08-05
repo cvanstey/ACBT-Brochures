@@ -5,7 +5,7 @@
 
 Atlantic City, New Jersey, was a vital hub of African American tourism, entrepreneurship, and social life during the era of segregation. Despite its significance, much of this history has been overlooked or forgotten—lost in ephemeral materials like mid-century tourism brochures, photographs, and city records that remain largely undigitized and inaccessible.
 
-**New Jersey’s Cultural Landscapes: Mapping Atlantic City’s Cultural Memory** is an interdisciplinary effort to recover and reanimate these hidden stories. By digitizing archival materials and applying data science techniques alongside interactive cartography, this project aims to reveal the spatial and cultural dimensions of Black life in Atlantic City during the Jim Crow era.
+**New Jersey’s Cultural Landscapes: Mapping Atlantic City’s Cultural Memory** is an interdisciplinary effort to recover and reanimate these hidden stories. By digitizing archival materials and applying data science techniques alongside interactive cartography, this project aims to reveal the spatial and cultural dimensions of life in Atlantic City during the Jim Crow era.
 
 ---
 

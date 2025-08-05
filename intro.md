@@ -11,11 +11,11 @@ Atlantic City, New Jersey, was a vital hub of African American tourism, entrepre
 
 ## Project Goals
 
-- **Recover and preserve hidden histories** through the digitization and analysis of archival collections.
+- **Recenter and preserve hidden histories** through the digitization and analysis of archival collections.
 - **Apply data science tools** such as Optical Character Recognition (OCR), natural language processing, and geospatial analysis to clean, structure, and visualize complex historical data.
 - **Build interactive maps and visualizations** that show how racialized space, entrepreneurship, and cultural memory intersect in Atlantic City.
 - **Engage scholars, students, and the public** by providing open access to data, code, and interpretive resources.
-
+- **To expand the sphere of knowledge** by connecting to other digital archives through links and associations.
 ---
 
 ## Methodological Foundations

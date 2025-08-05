@@ -2,6 +2,17 @@ import cv2
 import os
 from PIL import Image
 
+#This script is a semi-automated image cropper with user review, ideal for extracting photo-like regions (ads, portraits, signs) from scanned brochure pages.
+Reads .png images from a folder (e.g., split brochure pages)
+Converts to grayscale, thresholds, dilates to find contours
+Finds bounding boxes and pads them for cropping
+Shows each crop to the user, who can:
+Press y to save
+Press n to skip
+Press m to manually crop using a GUI box
+Press q to quit
+Saves cropped images with DPI metadata for print/export
+
 def resize_for_display(image, max_width=800, max_height=600):
     h, w = image.shape[:2]
     scale = min(max_width / w, max_height / h, 1.0)

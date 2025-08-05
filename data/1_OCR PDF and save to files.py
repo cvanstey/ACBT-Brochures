@@ -9,12 +9,20 @@ from tqdm import tqdm
 import cv2
 import numpy as np
 
-
+#Processes
+Loads a PDF from disk using PyMuPDF
+Converts each page to an image (.png)
+Runs Tesseract OCR on each page
+Cleans common OCR text encoding errors
+Saves the cleaned text to .txt files
 #Use this if you need:
+Saves images and text to a target output folder
 # structured data for mapping, analysis, or tagging.
 #extract embedded or layout-based images.
 #full archival or public history pipeline.
 #it to take time and let it process for high-quality results.
+
+#if you prefer to extract each image from each page, use 3_multiple_files.py which is a batch processing script.  
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 

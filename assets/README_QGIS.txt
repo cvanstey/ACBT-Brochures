@@ -42,10 +42,6 @@ project-folder/
 │ └── project.qgz
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🗺 Initial Setup

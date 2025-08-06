@@ -7,6 +7,7 @@ This project extracts, structures, and visualizes data from six African American
 ---
 
 > "Owing to the rapid progress of the present civilized world along all lines, and more particularly along commercial lines, and since our group has kept pace with this upward progress both in the Professional and Business fields, we, the citizens of the Northside of Atlantic City, New Jersey, deem it fitting and proper to form an Organization through and by which, we hope to be able to meet the Commercial needs of the inhabitants of our community, and stimulate among them greater interest for cooperation and efficiency in their chosen Professions or Businesses and along all Commercial lines."
+> C.J Newsome
 > 
 
 ---

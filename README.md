@@ -3,7 +3,7 @@
 ## Overview
 This project digitizes and analyzes historic African American tourism brochures produced by the Atlantic City Board of Trade during the 1930s–1940s. These brochures highlight businesses, cultural institutions, and leisure sites located primarily in what was known as the Northside of Atlantic City, NJ.
 
-While most of the featured businesses are Black-owned, a small percentage of Asian and Jewish businesses also appear, having purchased advertising space. Not all advertised locations are in Atlantic City—some are in Pleasantville, Ocean City, Absecon, Philadelphia, or even Florida.
+While most of the featured businesses are Black-owned, a small percentage of Asian and Jewish businesses also appear, having purchased advertising space. Not all advertised locations are in Atlantic City—some are in Pleasantville, Ocean City, Absecon, Philadelphia, and Florida.
 
 These materials challenge assumptions and invite deeper exploration. Rather than summarize all findings here, we encourage you to:
 

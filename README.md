@@ -71,7 +71,6 @@ python process_brochures.py
 You can explore:
 
 - data/ – Structured CSV output of parsed brochure data
-- images/ – Extracted and enhanced images from brochures
 - maps/ – Interactive map visualizations
 
 See the docs/ folder or GitHub Pages site for project demos and visualizations.

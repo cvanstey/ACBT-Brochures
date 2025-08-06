@@ -20,7 +20,7 @@ from PIL import Image, ImageOps, ImageFilter
 # Configure tesseract path here if needed
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-pdf_path = r"C:\Users\crook\OneDrive\Documents\archive\ACBT Project\brochures\H130.BoardofTrade003_1940.pdf"
+pdf_path = r"C:\Users\archive\ACBT Project\brochures\H130.BoardofTrade003_1940.pdf"
 output_dir = r"C:\Users\Public\Documents\archive\ACBT Project\ocr_split_pages1"
 os.makedirs(output_dir, exist_ok=True)
 

@@ -15,7 +15,7 @@ from PIL import Image, ImageOps, ImageFilter
 #Cleans and normalizes text (removing artifacts, fixing hyphens, etc.)
 #Uses heuristics to group lines into entries
 #Outputs one .txt file per column (e.g., page_1a.txt, page_1b.txt) with grouped entries
-#This is structured OCR — not just raw text — which is exactly what’s needed for reliable downstream parsing.
+#This is structured OCR — not just raw text — aids in downstream parsing.
 
 # Configure tesseract path here if needed
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"

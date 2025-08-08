@@ -47,6 +47,23 @@ These brochures are unique artifacts that document a thriving network of Black-o
 
 ---
 
+## Atlantic City Board of Trade Summary
+
+[View Summary CSV](assets/AtlanticCityBoardofTradeSummary.csv)
+
+---
+
+### Citation
+
+**GENERAL HISTORY OF THE ATLANTIC CITY BOARD OF TRADE, INC**  
+Author(s): Clifford J. Newsome  
+Source: *Negro History Bulletin*, NOVEMBER, 1952, Vol. 16, No. 2 (NOVEMBER, 1952), pp. 27–30  
+Published by: Association for the Study of African American Life and History  
+Stable URL: [https://www.jstor.org/stable/44214491](https://www.jstor.org/stable/44214491)  
+
+> JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content.
+
+
 ## Source Materials
 
 - Atlantic City Board of Trade brochures (1930s–1940s), digitized from the Atlantic City Free Public Library collections.

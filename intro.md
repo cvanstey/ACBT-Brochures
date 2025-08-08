@@ -51,7 +51,7 @@ These brochures are unique artifacts that document a thriving network of Black-o
 
 ## Atlantic City Board of Trade Summary
 
-[View Summary CSV](assets/AtlanticCityBoardofTradeSummary.csv)
+[View Summary CSV](assets/Atlantic_City_Board_of_Trade_Summary.csv)
 
 ---
 

@@ -6,6 +6,16 @@ The maps in this project serve as a visual interface for exploring Northside bus
 
 ---
 
+You can open the map in a new tab here:  
+[Open the full map](./maps/index.html){:target="_blank"}
+
+---
+
+<!-- Embed the map using an iframe -->
+<iframe src="./maps/index.html" width="100%" height="600" style="border:none;"></iframe>
+
+---
+
 ## 🔍 Cartography
 
 - **Business Listings**: Locations of hotels, restaurants, beauty parlors, nightclubs, tailors, and more.
@@ -56,15 +66,6 @@ The maps in this project serve as a visual interface for exploring Northside bus
 - **Map Boundaries**: Focused on historically Black neighborhoods, particularly the Northside and Kentucky Avenue corridor.
 
 
-You can open the map in a new tab here:  
-[Open the full map](./maps/index.html){:target="_blank"}
-
----
-
-<!-- Embed the map using an iframe -->
-<iframe src="./maps/index.html" width="100%" height="600" style="border:none;"></iframe>
-
-
 ## 🔗 Coming Soon
 
 Interactive map link + GitHub deployment  
@@ -75,5 +76,5 @@ Exportable layers as:
 
 ---
 
-> The map serves as a navigational tool—it but it has a way of narrating place, memory, and positioning itself as a method to interpret theory.  
-> *Use it to explore what was built, preserved, and remembered in the margins of Atlantic City's tourism economy.*
+> This project serves as a navigational tool— as a way of narrating place, memory.
+> *Use it to explore what was built, preserved, and remembered within the spaces Atlantic City's tourism economy.*

@@ -63,6 +63,7 @@ Stable URL: [https://www.jstor.org/stable/44214491](https://www.jstor.org/stable
 
 > JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content.
 
+---
 
 ## Source Materials
 

@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Atlantic City Board of Trade CSV Viewer</title>
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <title>Atlantic City Board of Trade Summary</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <style>
-    body { font-family: sans-serif; margin: 2em; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
-    th { background-color: #f0f0f0; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
   </style>
 </head>
 <body>
-  <h1>Atlantic City Board of Trade Summary</h1>
-  <div id="csv-table">Loading CSV...</div>
 
-  <script>
-    Papa.parse("data/Atlantic_City_Board_of_Trade_Summary.csv", {
-      download: true,
-      header: true,
-      complete: function(results) {
-        const data = results.data;
-        let html = '<table><thead><tr>';
-        Object.keys(data[0]).forEach(key => {
-          html += `<th>${key}</th>`;
-        });
-        html += '</tr></thead><tbody>';
-        data.forEach(row => {
-          html += '<tr>';
-          Object.values(row).forEach(val => {
-            html += `<td>${val || ""}</td>`;
-          });
-          html += '</tr>';
-        });
-        html += '</tbody></table>';
-        document.getElementById("csv-table").innerHTML = html;
-      }
-    });
-  </script>
+<h2>Atlantic City Board of Trade Summary</h2>
+<table id="csvTable" class="display"></table>
+
+<!-- Dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script>
+  // Load and parse CSV, then create table
+  Papa.parse('data/Atlantic_City_Board_of_Trade_Summary.csv', {
+    download: true,
+    header: true,
+    complete: function(results) {
+      const data = results.data.filter(row => Object.values(row).some(cell => cell !== ""));
+      const columns = Object.keys(data[0]).map(key => ({ title: key, data: key }));
+
+      $('#csvTable').DataTable({
+        data: data,
+        columns: columns,
+        pageLength: 10,
+        responsive: true
+      });
+    }
+  });
+</script>
+
 </body>
 </html>

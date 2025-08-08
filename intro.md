@@ -16,6 +16,8 @@ Atlantic City, New Jersey, was a vital hub of African American tourism, entrepre
 - **Build interactive maps and visualizations** that show how racialized space, entrepreneurship, and cultural memory intersect in Atlantic City.
 - **Engage scholars, students, and the public** by providing open access to data, code, and interpretive resources.
 - **To expand the sphere of knowledge** by connecting to other digital archives through links and associations.
+
+
 ---
 
 ## Methodological Foundations

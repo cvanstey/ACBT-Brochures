@@ -12,8 +12,12 @@ exclude:
 # favicon_ico: "/assets/favicon.ico"
 
 just_the_docs:
-  custom_css:
-    - "assets/css/custom.css"
+  nav_external_links:
+    - title: "<span class='nav-icon'>🖼️</span> Gallery"
+      url: "/gallery/"
+      hide_icon: true
+      open_in_new_tab: false
+
 
 # Enables GitHub Pages to build with this theme
 plugins:

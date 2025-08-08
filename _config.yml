@@ -11,6 +11,10 @@ exclude:
 # logo: "/assets/logo.png"
 # favicon_ico: "/assets/favicon.ico"
 
+just_the_docs:
+  custom_css:
+    - "assets/css/custom.css"
+
 # Enables GitHub Pages to build with this theme
 plugins:
   - jekyll-remote-theme

@@ -3,6 +3,10 @@ description: Historical brochures from Atlantic City
 remote_theme: just-the-docs/just-the-docs
 color_scheme: light
 
+exclude:
+  - data/*.py
+  - scripts/
+
 # Optional:
 # logo: "/assets/logo.png"
 # favicon_ico: "/assets/favicon.ico"

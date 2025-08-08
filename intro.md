@@ -51,6 +51,7 @@ These brochures are unique artifacts that document a thriving network of Black-o
 
 ## Atlantic City Board of Trade Summary
 
+<p><a href="ACBT_summary.html" target="_blank">📄 View the ACBT Summary Table</a></p>
 
 ---
 

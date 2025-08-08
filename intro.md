@@ -51,7 +51,57 @@ These brochures are unique artifacts that document a thriving network of Black-o
 
 ## Atlantic City Board of Trade Summary
 
-[View Summary CSV](assets/Atlantic_City_Board_of_Trade_Summary.csv)
+<h2>Atlantic City Board of Trade Summary</h2>
+<div id="csv-table"></div>
+
+<!-- Load PapaParse from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script>
+  fetch('assets/Atlantic_City_Board_of_Trade_Summary.csv')
+    .then(response => response.text())
+    .then(csv => {
+      const parsed = Papa.parse(csv, { header: true });
+      const data = parsed.data;
+
+      const table = document.createElement('table');
+      table.style.borderCollapse = 'collapse';
+      table.style.width = '100%';
+      table.style.marginTop = '1em';
+
+      // Table header
+      const thead = document.createElement('thead');
+      const headerRow = document.createElement('tr');
+      Object.keys(data[0]).forEach(col => {
+        const th = document.createElement('th');
+        th.textContent = col;
+        th.style.border = '1px solid #ccc';
+        th.style.padding = '8px';
+        th.style.backgroundColor = '#f2f2f2';
+        th.style.fontWeight = 'bold';
+        headerRow.appendChild(th);
+      });
+      thead.appendChild(headerRow);
+      table.appendChild(thead);
+
+      // Table body
+      const tbody = document.createElement('tbody');
+      data.forEach(row => {
+        const tr = document.createElement('tr');
+        Object.values(row).forEach(cell => {
+          const td = document.createElement('td');
+          td.textContent = cell;
+          td.style.border = '1px solid #ccc';
+          td.style.padding = '8px';
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+
+      document.getElementById('csv-table').appendChild(table);
+    });
+</script>
+
 
 ---
 

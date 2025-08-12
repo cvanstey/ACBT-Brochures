@@ -7,12 +7,12 @@ The maps in this project serve as a visual interface for exploring Northside bus
 ---
 
 You can open the map in a new tab here:  
-[Open the full map](./maps/index.html){:target="_blank"}
+[Open the full map](./mapping/index.html){:target="_blank"}
 
 ---
 
 <!-- Embed the map using an iframe -->
-<iframe src="./maps/index.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="./mapping/index.html" width="100%" height="600" style="border:none;"></iframe>
 
 ---
 

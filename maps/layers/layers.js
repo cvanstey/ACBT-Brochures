@@ -21,7 +21,7 @@ var lyr_NJ_AtlanticCity_1940_1 = new ol.layer.Image({
         
         
         source: new ol.source.ImageStatic({
-            url: "./layers/NJ_AtlanticCity_1940_1.png",
+            url: "./layers/AC1940_3.png",
             attributions: ' ',
             projection: 'EPSG:3857',
             alwaysInRange: true,
@@ -35,7 +35,7 @@ var lyr_1899_mapac1_modified_2 = new ol.layer.Image({
         
         
         source: new ol.source.ImageStatic({
-            url: "./layers/1899_mapac1_modified_2.png",
+            url: "./layers/AC1899_2.png",
             attributions: ' ',
             projection: 'EPSG:3857',
             alwaysInRange: true,

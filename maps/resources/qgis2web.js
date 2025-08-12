@@ -146,7 +146,6 @@ function createPopupField(currentFeature, currentFeatureKeys, layer) {
     layer.get('fieldLabels')[fieldName] == "header label - visible with data") {
     popupField += '<strong>' + layer.get('fieldAliases')[fieldName] + '</strong><br />';
 }
-
 if (fieldName === "Image_URL" && fieldValue != null && fieldValue !== '') {
     popupField += '<img src="' + fieldValue.trim() + '" style="max-width:200px;" /></td>';
 } else if (layer.get('fieldImages')[fieldName] != "ExternalResource") {
@@ -744,3 +743,4 @@ document.addEventListener('DOMContentLoaded', function() {
         bottomRightContainerDiv.appendChild(attributionControl);
 
     }
+

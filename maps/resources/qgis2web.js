@@ -4,7 +4,7 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+         maxZoom: 27, minZoom: 1, projection: new ol.proj.Projection({
             code: 'EPSG:3857',
             //extent: [-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789],
             units: 'm'})
@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-8289318.504110, 4772322.690662, -8282175.948732, 4776529.605598], map.getSize());
+map.getView().fit([-8291481.294740, 4773570.286621, -8281323.359645, 4777423.560642], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -634,7 +634,7 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_parsed_brochure_geocoded_1,
+    layer: lyr_parsed_brochure_geocoded_3,
     colName: 'Year',
     zoom: 10,
     collapsed: true,

@@ -142,23 +142,26 @@ function createPopupField(currentFeature, currentFeatureKeys, layer) {
                     continue;
                 }
             }
-            if (layer.get('fieldLabels')[currentFeatureKeys[i]] == "header label - always visible" ||
-                layer.get('fieldLabels')[currentFeatureKeys[i]] == "header label - visible with data") {
-                popupField += '<strong>' + layer.get('fieldAliases')[currentFeatureKeys[i]] + '</strong><br />';
-            }
-            if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
-				popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(currentFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
-			} else {
-				var fieldValue = currentFeature.get(currentFeatureKeys[i]);
-				if (/\.(gif|jpg|jpeg|tif|tiff|png|avif|webp|svg)$/i.test(fieldValue)) {
-					popupField += (fieldValue != null ? '<img src="images/' + fieldValue.replace(/[\\\/:]/g, '_').trim() + '" /></td>' : '');
-				} else if (/\.(mp4|webm|ogg|avi|mov|flv)$/i.test(fieldValue)) {
-					popupField += (fieldValue != null ? '<video controls><source src="images/' + fieldValue.replace(/[\\\/:]/g, '_').trim() + '" type="video/mp4">Il tuo browser non supporta il tag video.</video></td>' : '');
-				} else {
-					popupField += (fieldValue != null ? autolinker.link(fieldValue.toLocaleString()) + '</td>' : '');
-				}
-			}
-            popupText += '<tr>' + popupField + '</tr>';
+			if (layer.get('fieldLabels')[fieldName] == "header label - always visible" ||
+    layer.get('fieldLabels')[fieldName] == "header label - visible with data") {
+    popupField += '<strong>' + layer.get('fieldAliases')[fieldName] + '</strong><br />';
+}
+
+if (fieldName === "Image_URL" && fieldValue != null && fieldValue !== '') {
+    popupField += '<img src="' + fieldValue.trim() + '" style="max-width:200px;" /></td>';
+} else if (layer.get('fieldImages')[fieldName] != "ExternalResource") {
+    popupField += (fieldValue != null ? autolinker.link(fieldValue.toLocaleString()) + '</td>' : '');
+} else {
+    if (/\.(gif|jpg|jpeg|tif|tiff|png|avif|webp|svg)$/i.test(fieldValue)) {
+        popupField += (fieldValue != null ? '<img src="images/' + fieldValue.replace(/[\\\/:]/g, '_').trim() + '" /></td>' : '');
+    } else if (/\.(mp4|webm|ogg|avi|mov|flv)$/i.test(fieldValue)) {
+        popupField += (fieldValue != null ? '<video controls><source src="images/' + fieldValue.replace(/[\\\/:]/g, '_').trim() + '" type="video/mp4">Il tuo browser non supporta il tag video.</video></td>' : '');
+    } else {
+        popupField += (fieldValue != null ? autolinker.link(fieldValue.toLocaleString()) + '</td>' : '');
+    }
+}
+popupText += '<tr>' + popupField + '</tr>';
+
         }
     }
     return popupText;
@@ -739,4 +742,5 @@ document.addEventListener('DOMContentLoaded', function() {
     var attributionControl = document.getElementsByClassName('bottom-attribution')[0];
     if (attributionControl) {
         bottomRightContainerDiv.appendChild(attributionControl);
+
     }

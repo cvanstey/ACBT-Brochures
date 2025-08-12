@@ -27,7 +27,8 @@ You can open the map in a new tab here:
 
 ## 🗺️ Basemap
 
-- **Historical Base Layer**: 1940 GeoTIFF map of Atlantic City sourced from archival scans and georeferenced using QGIS and Rasterio.
+- **Historical Base Layer**: 11940 map of Atlantic City, created from archival scans and georeferenced in QGIS as a GeoTIFF, then exported to PNG tiles for OpenLayers display via qgis2web.
+- **Historical Overlay**: 1899 map of Atlantic City, reconstructed from multiple partial archival scans with assistance from an archivist. The scans were stitched together in Photoshop, georeferenced in QGIS, and exported to PNG tiles for OpenLayers display via qgis2web.
 - **Modern Context Layer**: Optional modern map layer for comparative exploration.
 
 ---
@@ -52,10 +53,11 @@ You can open the map in a new tab here:
 
 ## ⚙️ Technologies Used
 
-- **Folium**: Python-based interactive maps rendered with Leaflet.js.
-- **GeoJSON**: Structured geographic data exported from CSV and shapefiles.
-- **Rasterio**: Used to georeference and overlay historical maps.
-- **OpenCV + Tesseract**: Image crops and OCR for generating map-linked content.
+**QGIS**: Georeferenced historical maps (1940 GeoTIFF and stitched 1899 map) and prepared data for web export.
+**qgis2web + OpenLayers**: Converted georeferenced rasters and vector data into interactive, browser-based maps with layer controls.
+**GeoJSON**: Structured geographic data exported from CSV and shapefiles for use in web maps.
+**Rasterio**: Programmatically handled GeoTIFFs and spatial metadata during preprocessing.
+**OpenCV + Tesseract**: Detected and cropped image regions, and performed OCR to generate map-linked historical content.
 
 ---
 

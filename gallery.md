@@ -6,7 +6,8 @@ has_children: false
 permalink: /gallery/
 ---
 
-![Camera](https://img.icons8.com/ios/452/camera.png) # Gallery
+![Camera](https://img.icons8.com/ios/452/camera.png =50x50) # Gallery
+ # Gallery
 
 Browse historical images from the Atlantic City brochures.
 

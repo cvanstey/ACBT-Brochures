@@ -4,7 +4,7 @@
 
 **Mapping Atlantic City's cultural memory using the archive, data science, and interactive cartography**
 
-Welcome to the documentation for this project, which explores the role of African American tourism, race, memory, and visual culture in Atlantic City through interactive cartography and archival research.
+Welcome to the documentation for this project, which explores the role of African American visual culture, memory, and resistance in Atlantic City through interactive cartography and archival research.
 
 ## Project Highlights
 
@@ -22,3 +22,4 @@ Explore the sections above to dive into the data, methods, and maps. Start with 
 ## Acknowledgments
 
 This project is made possible by access to archival collections from Atlantic City Free Public Library, contributions from Heather Perez, and the power of open-source tools.
+

@@ -3,10 +3,17 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 1rem;
+  justify-content: center; /* Center the gallery */
 }
 
 .gallery img {
   width: 200px;
   height: auto;
   border: 1px solid #ccc;
+  border-radius: 8px; /* Optional: rounded corners */
+  transition: transform 0.3s ease; /* Optional: hover effect transition */
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Optional: zoom-in effect on hover */
 }

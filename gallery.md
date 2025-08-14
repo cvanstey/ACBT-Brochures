@@ -42,7 +42,6 @@ Browse historical images from the Atlantic City brochures.
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page7_img1210.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page7_img674.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page9_img1237.png" width="300" />
-<img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page9_img1237.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page9_img484.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page9_img1267.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page9_img455.png" width="300" />
@@ -326,13 +325,5 @@ Browse historical images from the Atlantic City brochures.
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade006_1947_page36_img54.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade006_1947_page37_img49.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade006_1947_page37_img49.png" width="300" /> 
-
-
-
-
-
-
-
-  
   <!-- Add more images as needed -->
 </div>

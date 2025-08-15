@@ -11,7 +11,7 @@ permalink: /gallery/
 Browse historical images from the Atlantic City brochures.
 
 <div class="gallery">
-<img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page2_img1105.png" width="300" alt="Description of the image here" /> />
+<img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page2_img1105.png" width="300" alt="Description of the image here" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page2_img2574.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page2_img2525.png" width="300" />
 <img src="https://raw.githubusercontent.com/cvanstey/ACBT-Brochures/main/assets/H130.BoardofTrade001_1936_page2_img1876.png" width="300" />

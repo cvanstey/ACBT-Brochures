@@ -18,7 +18,6 @@ just_the_docs:
       hide_icon: true
       open_in_new_tab: false
 
-
 # Enables GitHub Pages to build with this theme
 plugins:
   - jekyll-remote-theme

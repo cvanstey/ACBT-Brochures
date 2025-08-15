@@ -10,3 +10,16 @@
   height: auto;
   border: 1px solid #ccc;
 }
+/* Ensure all nav items look the same */
+.site-nav .nav-list-link {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* Optional: Customize the Gallery link */
+.site-nav .nav-list-item:first-child .nav-list-link {
+  font-weight: bold;  /* Make Gallery bold */
+  color: #0073e6; /* Change color for Gallery */
+}

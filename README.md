@@ -7,10 +7,10 @@ While most of the featured businesses are Black-owned, a small percentage of Asi
 
 These materials challenge assumptions and invite deeper exploration. Rather than summarize all findings here, we encourage you to:
 
-Tour the project
-Explore the dataset
-Suggest refinements
-Apply your critical data skills
+- Tour the project
+- Explore the dataset
+- Suggest refinements
+- Apply your critical data skills
 
 Be part of a collaborative effort to center overlooked histories through open science and digital tools.
 
@@ -20,7 +20,7 @@ Be part of a collaborative effort to center overlooked histories through open sc
 - Improves scanned brochure visuals for better OCR accuracy and archival use.
 - 🧠 Parsing of names, titles, addresses, and phone numbers
 - Uses regular expressions and custom heuristics to structure OCR output.
--✂️ Splitting scanned pages into logical sections
+- ✂️ Splitting scanned pages into logical sections
 - Automatically separates brochure scans into readable, analyzable chunks.
 - 🌐 Geocoding locations with Folium, GIS tools, and QGIS
 - Transforms street addresses into mappable coordinates for visualization.
@@ -34,6 +34,12 @@ Be part of a collaborative effort to center overlooked histories through open sc
 - Fully open-source and reproducible, designed for public scholarship.
 - ✍️ Coding syntax and editing support from ChatGPT
 - Assisted in developing clean, readable, and efficient project documentation and scripts.
+
+
+## Challenges
+Github pages are great for sharing and displaying maps made using QGIS but web server development will be necessary to take advantage of the feature rich geospatial program. 
+
+Please stay tuned for updates and links to a cloud hosted solution in the next few weeks.
 
 ## Installation
 1. Clone the repository:

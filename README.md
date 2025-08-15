@@ -15,27 +15,27 @@ Apply your critical data skills
 Be part of a collaborative effort to center overlooked histories through open science and digital tools.
 
 ## Features
-📄 OCR-based text extraction from scanned brochures (PDF and PNG)
+-📄 OCR-based text extraction from scanned brochures (PDF and PNG)
 
 Features
-🖼️ Image enhancement, cropping, and enlargement
-Improves scanned brochure visuals for better OCR accuracy and archival use.
-🧠 Parsing of names, titles, addresses, and phone numbers
-Uses regular expressions and custom heuristics to structure OCR output.
-✂️ Splitting scanned pages into logical sections
-Automatically separates brochure scans into readable, analyzable chunks.
-🌐 Geocoding locations with Folium, GIS tools, and QGIS
-Transforms street addresses into mappable coordinates for visualization.
-🗺️ Interactive historical mapping
+-🖼️ Image enhancement, cropping, and enlargement
+-Improves scanned brochure visuals for better OCR accuracy and archival use.
+-🧠 Parsing of names, titles, addresses, and phone numbers
+-Uses regular expressions and custom heuristics to structure OCR output.
+-✂️ Splitting scanned pages into logical sections
+-Automatically separates brochure scans into readable, analyzable chunks.
+-🌐 Geocoding locations with Folium, GIS tools, and QGIS
+-Transforms street addresses into mappable coordinates for visualization.
+-🗺️ Interactive historical mapping
 Visualizes geocoded data and brochure content over historical basemaps.
-🧾 Integration of historical research and cultural context
+-🧾 Integration of historical research and cultural context
 Combines data science with archival inquiry and interpretive analysis.
-☁️ Google Drive for high-resolution image hosting
-Serves brochure images directly to maps and web-based tools.
-💻 Built using Python, PyMuPDF, pytesseract, and GitHub Pages
-Fully open-source and reproducible, designed for public scholarship.
-✍️ Coding syntax and editing support from ChatGPT
-Assisted in developing clean, readable, and efficient project documentation and scripts.
+-☁️ github repo for low-resolution image hosting
+-Serves brochure images directly to maps and web-based tools.
+-💻 Built using Python, PyMuPDF, pytesseract, and GitHub Pages
+-Fully open-source and reproducible, designed for public scholarship.
+-✍️ Coding syntax and editing support from ChatGPT
+-Assisted in developing clean, readable, and efficient project documentation and scripts.
 
 ## Installation
 1. Clone the repository:

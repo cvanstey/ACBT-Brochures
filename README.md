@@ -21,11 +21,11 @@ Be part of a collaborative effort to center overlooked histories through open sc
 - 🧠 Parsing of names, titles, addresses, and phone numbers
 - Uses regular expressions and custom heuristics to structure OCR output.
 -✂️ Splitting scanned pages into logical sections
--Automatically separates brochure scans into readable, analyzable chunks.
+- Automatically separates brochure scans into readable, analyzable chunks.
 - 🌐 Geocoding locations with Folium, GIS tools, and QGIS
--Transforms street addresses into mappable coordinates for visualization.
+- Transforms street addresses into mappable coordinates for visualization.
 - 🗺️ Interactive historical mapping
-Visualizes geocoded data and brochure content over historical basemaps.
+- Visualizes geocoded data and brochure content over historical basemaps.
 - 🧾 Integration of historical research and cultural context
 - Combines data science with archival inquiry and interpretive analysis.
 - ☁️ github repo for low-resolution image hosting

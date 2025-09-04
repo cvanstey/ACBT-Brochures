@@ -1,7 +1,7 @@
 # 📖 INTRODUCTION
 
 
-## Uncovering Atlantic City’s Black Cultural Memory through Data and Mapping
+## Uncovering Atlantic City’s Cultural Memory through Data and Mapping
 
 Atlantic City, New Jersey, was a vital hub of African American tourism, entrepreneurship, and social life during the era of segregation. Despite its significance, much of this history has been overlooked or forgotten—lost in ephemeral materials like mid-century tourism brochures, photographs, and city records that remain largely undigitized and inaccessible.
 
